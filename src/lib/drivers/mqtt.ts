@@ -119,7 +119,7 @@ export class MQTTDriver extends EventEmitter implements ISocket, IDriver {
     })
   }
 
-  notifyVisitorTyping (rid: string, username: string, typing: boolean, token: string): Promise<any> {
+  notifyVisitorTyping (rid: string, username: string, typing: boolean, token: string, text?: string,): Promise<any> {
     return Promise.resolve() as any
   }
 
