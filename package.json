@@ -41,8 +41,8 @@
     "start": "ts-node ./src/utils/start",
     "docs": "rimraf ./docs && typedoc --options ./typedoc.json ./src/lib",
     "prebuild": "npm run test",
-    "build": "rimraf ./dist/* && tsc && webpack && npm run test:package",
-    "builddist": "rimraf ./dist/* && tsc",
+    "build": "rimraf ./dist/* && tsc --outDir ./ && webpack && npm run test:package",
+    "builddist": "rimraf ./dist/* && tsc --outDir ./",
     "publish:prepare": "node .scripts/release.js"
   },
   "husky": {

@@ -5,6 +5,14 @@
 /shrinkwrap.yaml
 /package-lock.json
 /docs/
-# /dist
+/dist
 .DS_Store
 *.proto
+
+# /clients
+# /interfaces
+# /lib
+# /utils
+# /index.d.ts
+# /index.js
+# /index.js.map
